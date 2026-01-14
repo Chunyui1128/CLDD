@@ -1,0 +1,45 @@
+----------------- Options ---------------
+                     arch: Imagenet:resnet50             	[default: res50]
+               batch_size: 2                             	[default: 256]
+                    beta1: 0.9                           
+                blur_prob: 0.5                           
+                 blur_sig: 0.0,3.0                       
+          checkpoints_dir: ./checkpoints                 
+                class_bal: False                         
+                 cropSize: 224                           
+                 data_aug: False                         
+               data_label: train                         
+                data_mode: ours                          
+          earlystop_epoch: 5                             
+              epoch_count: 1                             
+           fake_list_path: datasets/fake_train.pickle    	[default: None]
+             fix_backbone: True                          	[default: False]
+                  gpu_ids:                               	[default: 0]
+                init_gain: 0.02                          
+                init_type: normal                        
+                  isTrain: True                          	[default: None]
+               jpg_method: cv2,pil                       
+                 jpg_prob: 0.5                           
+                 jpg_qual: 30,100                        
+               last_epoch: -1                            
+                 loadSize: 256                           
+                loss_freq: 400                           
+                       lr: 0.0001                        
+                     mode: binary                        
+                     name: smoke_test                    	[default: experiment_name]
+                new_optim: False                         
+                    niter: 1                             	[default: 100]
+                  no_flip: False                         
+              num_threads: 4                             
+                    optim: adam                          
+           real_list_path: datasets/real_train.pickle    	[default: None]
+           resize_or_crop: scale_and_crop                
+                rz_interp: bilinear                      
+          save_epoch_freq: 1                             
+           serial_batches: False                         
+                   suffix:                               
+              train_split: train                         
+                val_split: val                           
+       wang2020_data_path: None                          
+             weight_decay: 0.0                           
+----------------- End -------------------
